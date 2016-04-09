@@ -1,0 +1,13 @@
+{
+  "name": "video-background-exp",
+  "version": "1.0.0",
+  "description": "This is the experiment of a video in the background",
+  "main": "Gulpfile.js",
+  "author": "Eliezer Pujols",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0"
+  }
+}

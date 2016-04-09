@@ -1,0 +1,14 @@
+// Mixins
+@mixin breakpoint($point) {
+   @if $point == small {
+      @media (min-width: $break-small) {
+         @content;
+      }
+   }
+   
+   @if $point == medium {
+      @media (min-width: $break-medium) {
+         @content;
+      }
+   }
+}

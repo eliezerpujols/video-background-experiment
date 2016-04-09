@@ -1,0 +1,125 @@
+/* ------------------------------
+
+   Global Styles
+
+--------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 68%;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* ------------------------------
+
+   Intro Styles
+
+--------------------------------- */
+#intro {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+#intro::after {
+  background: rgba(0, 0, 0, 0.8);
+  content: " ";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#intro__video {
+  background-image: url("../img/poster-video.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.intro__heading {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+  display: inline-block;
+  font-size: 3.4em;
+  left: 50%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 786px) {
+  .intro__heading {
+    font-size: 5.4em;
+  }
+}
+
+.intro__heading::-moz-selection {
+  background: transparent;
+}
+
+.intro__heading::selection {
+  background: transparent;
+}
+
+.intro__heading::before, .intro__heading::after {
+  background-color: rgba(255, 255, 255, 0.8);
+  content: " ";
+  height: 0.08em;
+  position: absolute;
+  -webkit-transition: width 0.35s;
+  transition: width 0.35s;
+  width: 100%;
+}
+
+@media (min-width: 786px) {
+  .intro__heading::before, .intro__heading::after {
+    height: 0.10em;
+    width: 50%;
+  }
+}
+
+.intro__heading::before {
+  left: 0;
+  top: -0.28em;
+}
+
+.intro__heading::after {
+  bottom: -0.28em;
+  right: 0;
+}
+
+.intro__heading:hover::before, .intro__heading:hover::after {
+  width: 100%;
+}
