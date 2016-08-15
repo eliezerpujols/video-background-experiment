@@ -17,8 +17,8 @@ Have a bug or an issue with this experiment? [Open a new](https://github.com/eli
 ## About Creator
 
 This experiment was created by **Eliezer Pujols**. You can follow him on:
-* https://twitter.com/eliezerpujols
-* https://github.com/eliezerpujols
+* https://twitter.com/wideckop
+* https://github.com/wideckop
 
 ## License
 
